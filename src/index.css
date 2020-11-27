@@ -1,0 +1,667 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  font-family: sans-serif;
+  background: #7a7f80; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #868384,
+    #474547,
+    #080808
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #080808,
+    #6f6d70,
+    #8c9091
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body,
+html,
+.App,
+#root,
+.outer {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+.outerr {
+  margin-top: 80px;
+  padding: 20px;
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  text-align: center;
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.outer .outerr .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.outer .outerr h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 16px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #167bff;
+}
+
+.center_card {
+  width: 150px;
+  height: 100px;
+  overflow-y: auto;
+  font-size: 14px;
+  text-align: center;
+}
+
+.jbg {
+  width: 150px;
+  height: 150px;
+}
+
+.photo {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+}
+
+.photo1 {
+  margin-left: 50px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+}
+
+.icon {
+  float: left;
+  margin-left: -1100px;
+  height: 40px;
+  width: 40px;
+}
+
+.pozicija {
+  position: "absolute";
+}
+
+.container2 {
+  position: center;
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  text-align: center;
+}
+
+.container1 {
+  margin-right: 25px;
+  margin-top: -20px;
+  position: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: row;
+  text-align: center;
+}
+
+.dugme {
+  float: right;
+  background-color: #c3c9d1;
+  margin-left: 30px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.dugme:hover {
+  background-color: rgb(49, 47, 47);
+  color: white;
+}
+
+.dugme1 {
+  float: right;
+  background-color: #c3c9d1;
+  margin-left: 30px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.dugme1:hover {
+  background-color: rgb(49, 47, 47);
+  color: white;
+}
+
+.dugme2 {
+  margin-left: 660px;
+  background-color: #c3c9d1;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.dugme2:hover {
+  background-color: rgb(49, 47, 47);
+  color: white;
+}
+
+.dugmeKreiraj:hover {
+  background-color: rgb(49, 47, 47);
+  color: white;
+}
+.dugmeKreiraj {
+  float: left;
+  background-color: #c3c9d1;
+  margin-left: 650px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.dugmePretrazi:hover {
+  background-color: rgb(49, 47, 47);
+  color: white;
+}
+.dugmePretrazi {
+  float: left;
+  background-color: #c3c9d1;
+  margin-top: 80px;
+  margin-left: 650px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.dug {
+  float: right;
+  background-color: #c3c9d1;
+  margin-left: 30px;
+  color: rgb(0, 0, 0);
+
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.dug:hover {
+  background-color: rgb(49, 47, 47);
+  color: white;
+}
+
+.dugg {
+  float: left;
+  background-color: #c3c9d1;
+  margin-left: 30px;
+  color: rgb(0, 0, 0);
+
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.dugg:hover {
+  background-color: rgb(49, 47, 47);
+  color: white;
+}
+
+.container1 .btn {
+  background-color: #f1f1f1;
+  margin-left: 10px;
+  color: black;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.container1 .btn1 {
+  background-color: #f1f1f1;
+  margin-left: 50px;
+  color: black;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.container1 .btn1:hover {
+  background-color: black;
+  color: white;
+}
+.container1 .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.grid-container {
+  display: block;
+  height: 800px;
+  float: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 50px;
+  padding: 50px;
+}
+
+.grid-container > div {
+  text-align: center;
+  width: 250px;
+  height: 330px;
+  margin: auto;
+  background: #dfd9d9;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 20px 55px 20px 55px;
+  content: "space-between";
+  transition: all 0.3s;
+  font-size: 20px;
+}
+
+.grid-container1 {
+  display: block;
+  overflow-x: auto;
+  height: 500px;
+  float: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 50px;
+  padding: 50px;
+}
+
+.grid-container1 > div {
+  background-color: red;
+  text-align: center;
+  width: 250px;
+  height: 330px;
+  margin: auto;
+  background: #dfd9d9;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 20px 55px 20px 55px;
+  content: "space-between";
+  transition: all 0.3s;
+  font-size: 20px;
+}
+
+.inner {
+  font-size: 25px;
+  width: 350px;
+  margin: auto;
+  background: #dfd9d9;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 45px 45px 45px 45px;
+  border-radius: 100px;
+  content: "space-between";
+  transition: all 0.3s;
+}
+
+.size_font {
+  font-size: 20px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.midlebox {
+  float: left;
+  width: 80%;
+  height: 1700px;
+}
+
+.leftbox {
+  float: left;
+  width: 10%;
+  height: 1700px;
+}
+
+.rightbox {
+  float: right;
+
+  width: 10%;
+  height: 1600px;
+}
+
+.lijeva_slika {
+  float: left;
+  width: 100%;
+  height: 1700px;
+}
+
+.desna_slika {
+  float: right;
+  width: 100%;
+  height: 1700px;
+}
+
+.midleTop {
+  float: left;
+  width: 100%;
+  margin-left: -300px;
+  margin-top: 80px;
+  height: 600px;
+}
+
+.midleBottom {
+  float: left;
+  width: 100%;
+  height: 100px;
+}
+
+.popenji {
+  margin-top: -600px;
+}
+
+#exTab3 .nav-pills > li > a {
+  float: left;
+  background-color: #5b5f5f;
+  color: #252121;
+  font-size: 25px;
+  margin-left: 40px;
+  border-radius: 14px 14px 14px 14px;
+}
+
+#exTab3 .nav-pills > li > a:hover {
+  background-color: rgb(167, 163, 163);
+  color: white;
+}
+
+#exTab3 .tab-content {
+  height: 550px;
+  width: 1600px;
+  margin-top: 100px;
+  margin-left: 40px;
+  color: rgb(10, 0, 0);
+  padding: 20px 15px;
+}
+
+#exTab3 .tabovi {
+  float: left;
+  width: 1600px;
+}
+
+.proba {
+  float: left;
+  margin-left: 1350px;
+  margin-top: 7px;
+}
+
+.centriraj {
+  margin-left: -10px;
+}
+
+.error {
+  color: red;
+}
+
+.forma_dodavanje {
+  margin-top: 200px;
+  margin-left: 700px;
+}
+
+.form_label {
+  font-size: 20px;
+  color: #f1f1f1;
+}
+
+.form_group {
+  float: left;
+  width: 100%;
+  margin-left: 40px;
+}
+
+.odmakni {
+  margin-left: 100px;
+}
+
+.odmakni1 {
+  margin-left: 30px;
+}
+
+.odmakni2 {
+  margin-left: 100px;
+}
+
+.povecaj {
+  width: 30px;
+  height: 30px;
+}
+
+.odbij_top {
+  margin-top: 35px;
+}
+
+.field {
+  margin-top: 0px;
+  margin-left: 100px;
+}
+
+.odabij {
+  margin-left: 70px;
+}
+.flt {
+  float: left;
+}
+
+.cardetails {
+  float: left;
+  width: 75%;
+  height: 100%;
+  margin-left: 300px;
+  margin-top: 100px;
+}
+.txt {
+  color: white;
+  font-size: 40px;
+}
+.txt2 {
+  margin-left: 50px;
+  color: white;
+  font-size: 40px;
+}
+.txt1 {
+  color: white;
+  font-size: 20px;
+}
+
+.makni {
+  margin-left: 100px;
+}
+
+.makni4 {
+  margin-left: 300px;
+}
+
+.makni3 {
+  margin-left: 180px;
+}
+
+.makni2 {
+  margin-left: 120px;
+}
+
+.makni1 {
+  margin-top: 10px;
+  margin-left: 100px;
+}
+
+.sizze {
+  width: 400px;
+}
+
+.sizze1 {
+  width: 250px;
+}
+
+.foo {
+  color: white;
+  margin-left: 90px;
+}
+
+.slikeRazmak {
+  float: left;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  overflow-x: auto;
+}
+.maliRazmak {
+  margin-left: 20px;
+}
+
+.maloOdmk {
+  margin-left: 10px;
+}
+
+.modalcss {
+  width: 40%;
+  margin-left: 640px;
+  margin-top: 150px;
+}
+.modaltxt {
+  font-size: 20px;
+}
+
+.brzapretraga {
+  color: white;
+  margin-left: 650px;
+  height: 50px;
+}
+
+.usersCars {
+  background-color: #7a7f80;
+}
+.sviOglasi {
+  margin-top: 100px;
+  margin-left: 622px;
+  color: white;
+  font-size: 40px;
+}
+
+.usersCrud {
+  margin-left: 150px;
+  width: 80%;
+}
+
+.tekst {
+  font-size: 25px;
+}
+.tekst1 {
+  font-size: 20px;
+}
+.scroll {
+  overflow-y: auto;
+}
